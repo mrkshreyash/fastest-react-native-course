@@ -1,3 +1,4 @@
+import colors from "@/constants/theme";
 import { useState } from "react";
 import { Alert, Button, StyleSheet, Text, TextInput, View } from "react-native";
 
@@ -10,7 +11,7 @@ function HomeScreen() {
   };
 
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, { backgroundColor: colors.background }]}>
       <Text style={styles.title}>Login</Text>
       <TextInput
         style={styles.text}
